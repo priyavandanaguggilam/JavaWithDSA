@@ -49,6 +49,63 @@ They are divided into three main categories:
     break: Instantly terminates the loop or switch statement entirely and moves to the next line of code immediately following the block.
     continue: Skips the current iteration of a loop and jumps straight to the next evaluation/increment step. It does not stop the whole loop, just the current round.
     return: Explicitly returns from a method. It stops executing the entire method and passes control back to whoever called it.
+#Operators
+   In Java, Operators are special symbols that perform specific operations on one, two, or three operands (variables or values) and then return a result.
+1. By the Number of Operands
+   Unary Operators: Work on a single operand (e.g., ++a).
+   Binary Operators: Work on two operands (e.g., a + b). Most Java operators fall into this category.
+   Ternary Operator: Works on three operands (e.g., condition ? trueValue : falseValue).
+2. Functional Categories of Operators
+   A. Arithmetic Operators (The Math Toolkit)
+      Used to perform basic mathematical operations.
+      + (Addition)
+      - (Subtraction)
+      * (Multiplication)
+      / (Division) — Note: If both operands are integers, this performs integer division and drops the remainder (e.g., 5 / 2 is 2, not 2.5).
+      % (Modulus) — Returns the remainder of a division (e.g., 5 % 2 is 1).
+   B. Unary Operators
+      These require only one operand and are used to increment, decrement, or invert a value.
+      ++ (Increment): Increases the value by 1.
+      -- (Decrement): Decreases the value by 1.
+      Prefix (++x): Increments the value before using it in the expression.
+      Postfix (x++): Uses the current value in the expression first, then increments it.
+      ! (Logical Complement): Inverts a boolean value (e.g., !true becomes false).
+
+  C. Relational (Comparison) Operators
+      Used to compare two values. They always return a boolean value (true or false). They are the backbone of your conditional statements (if conditions).
+      == (Equal to) — Don't confuse this with the single = assignment operator!
+      != (Not equal to)
+      > (Greater than)
+      < (Less than)
+      >= (Greater than or equal to)
+      <= (Less than or equal to)
+  D. Logical Operators
+      Used to combine multiple boolean expressions together. They use short-circuit evaluation, meaning they stop evaluating as soon as the final outcome is certain.
+      && (Logical AND): Returns true only if both conditions are true. If the first condition is false, Java doesn't even bother checking the second one.
+      || (Logical OR): Returns true if at least one condition is true. If the first condition is true, it skips checking the second one.
+  E. Assignment Operators
+      Used to assign values to variables.
+      = (Simple Assignment): Assigns the value on the right to the variable on the left.
+      Compound Assignments (+=, -=, *=, /=, %=): Shortcuts that perform an operation and assign the result in one step.
+      x += 5; is exactly the same as writing x = x + 5;
+ F. Bitwise Operators (Advanced)
+      These perform operations directly on the individual bits (0s and 1s) of integer types.
+      & (Bitwise AND), | (Bitwise OR), ^ (Bitwise XOR), ~ (Bitwise Complement).
+      << (Left shift), >> (Right shift).
+
+3. Operator Precedence (Order of Operations)
+      Just like in mathematics, Java evaluates operators in a specific order. For example, multiplication happens before addition.
+      If you want to override the default precedence or just want to make your code easier to read, always use parentheses (). 
+      Parentheses have the highest precedence in Java.
+
+
+
+
+
+
+
+
+
 
 
 
