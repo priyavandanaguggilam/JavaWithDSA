@@ -1,0 +1,61 @@
+#JAVA BASICS
+Java’s biggest claim to fame is WORA: Write Once, Run Anywhere.
+Unlike languages that compile directly into machine code for a specific operating system (like C++), Java compiles into an intermediate format called Bytecode. 
+Any device with a Java Virtual Machine (JVM) can run this bytecode.
+The Holy Trinity of Java: JVM, JRE, and JDK
+   JVM (Java Virtual Machine): The engine that actually runs the Java bytecode.
+   JRE (Java Runtime Environment): The toolkit needed to run Java programs. It includes the JVM plus core libraries.
+   JDK (Java Development Kit): The full developer setup. It includes the JRE plus development tools like the compiler (javac).
+
+
+#CONTROL STATEMENTS
+In Java, Control Statements are the steering wheel of your code. By default, code executes line by line, from top to bottom.
+Control statements break this linear flow, allowing your program to make decisions, repeat actions, or jump to different sections based on conditions.
+They are divided into three main categories:
+  Decision-Making (Selection) Statements
+  Looping (Iteration) Statements
+  Jump Statements
+
+1. Decision-Making Statements
+  These statements evaluate a boolean condition (true or false) and decide which block of code to run next.
+  A. The if-else Hierarchy
+      Simple if: Executes a block of code only if the condition is true.
+      if-else: Gives an alternative block of code if the condition is false.
+      if-else if ladder: Tests multiple conditions in sequence. The first one that evaluates to true executes, and the rest are skipped.
+      Nested if: An if statement inside another if statement, used for multi-layered conditions.
+ B. The switch Statement
+     Instead of writing dozens of if-else statements, switch tests a single variable against a list of explicit values (called cases).
+     The break keyword: Crucial in a switch. If you omit break, the program will "fall through" and execute all subsequent cases regardless of whether they match.
+     The default case: Acts like the final else; it executes if none of the cases match.
+     Allowed types: byte, short, char, int, String, and Enums.
+
+2. Looping (Iteration) Statements
+   Loops allow you to execute a block of code repeatedly as long as a specified condition remains true.
+   Every loop requires three core components to prevent an infinite loop: Initialization (starting point), Condition (stop criterion), and Increment/Decrement (step size).
+  A. for Loop
+    Best used when you know in advance exactly how many times the loop should run.
+    Syntax structure: for(initialization; condition; increment/decrement) { ... }
+  B. Enhanced for Loop (For-Each)
+     Introduced to strictly iterate through elements of an array or a collection without using an explicit counter or index. It is cleaner and prevents "off-by-one" errors.
+  C. while Loop
+    Best used when you do not know the exact number of iterations beforehand, but you know the condition that must be met to stop. 
+      It checks the condition before executing the loop body (Entry-controlled loop).
+  D. do-while Loop
+    Similar to the while loop, but with one major difference: it checks the condition after executing the loop body (Exit-controlled loop).
+    Because of this, a do-while loop is guaranteed to run at least once, even if the condition is false right from the start.
+
+3. Jump Statements
+    Jump statements unconditionally transfer the control of execution from one part of the program to another.
+    break: Instantly terminates the loop or switch statement entirely and moves to the next line of code immediately following the block.
+    continue: Skips the current iteration of a loop and jumps straight to the next evaluation/increment step. It does not stop the whole loop, just the current round.
+    return: Explicitly returns from a method. It stops executing the entire method and passes control back to whoever called it.
+
+
+
+
+
+
+
+
+
+
