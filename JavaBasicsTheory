@@ -98,16 +98,134 @@ They are divided into three main categories:
       If you want to override the default precedence or just want to make your code easier to read, always use parentheses (). 
       Parentheses have the highest precedence in Java.
 
+#Functions
+A function in Java is called a method. It is a block of code that performs a specific task.
+Methods help avoid writing the same code multiple times, making programs easier to read, maintain, and reuse.
+ Components of a Method
+   1. Access Modifier
+      Specifies who can access the method.
+      Examples:
+        public
+        private
+        protected
+        Default (no modifier)
+  2. Return Type
+      Specifies what value the method returns.
+      Examples:
+         int
+         double
+         String
+         boolean
+         void (returns nothing)
+ 3. Method Name
+      The identifier used to call the method.
+ 4. Parameters
+      Inputs passed to the method.
+ 5. Method Body
+   Contains the statements executed when the method is called.
+
+Types of Methods
+   1. Predefined (Built-in) Methods
+      These methods are provided by Java's standard libraries.
+      They perform commonly used operations such as mathematical calculations, string manipulation, and input/output operations.
+   2. User-defined Methods
+      These methods are created by the programmer to perform specific tasks according to the application's requirements.
+
+Types of User-defined Methods
+   Methods with no parameters and no return value.
+   Methods with parameters but no return value.
+   Methods with no parameters but with a return value.
+   Methods with both parameters and a return value.
 
 
+#String Functions (Methods) in Java
+   A String in Java is a sequence of characters used to store and manipulate text.
+   Java provides many built-in String methods (functions)to perform operations such as finding length, comparing strings, extracting characters, changing case, searching text, and replacing characters.
 
+ Common String Functions
+   1. length()
+   Returns the number of characters in a string.
+   2. charAt()
+   Returns the character at a specified index.
+   3. substring()
+   Extracts a portion of a string.
+   4. equals()
+   Compares two strings for content equality.
+   Returns true if both strings are equal; otherwise, false.
+   5. equalsIgnoreCase()
+   Compares two strings without considering uppercase and lowercase differences.
+   6. compareTo()
+   Compares two strings lexicographically (dictionary order).
+   Returns:
+   0 if both strings are equal.
+   Positive value if the first string is greater.
+   Negative value if the first string is smaller.
+   7. toUpperCase()
+   Converts all characters of a string to uppercase.
+   8. toLowerCase()
+   Converts all characters of a string to lowercase.
+   9. trim()
+   Removes leading and trailing white spaces from a string.
+   10. contains()
+   Checks whether a string contains a specified sequence of characters.
+   Returns true or false.
+   11. startsWith()
+   Checks whether a string begins with a specified prefix.
+   12. endsWith()
+   Checks whether a string ends with a specified suffix.
+   13. indexOf()
+   Returns the index of the first occurrence of a specified character or substring.
+   14. lastIndexOf()
+   Returns the index of the last occurrence of a specified character or substring.
+   15. replace()
+   Replaces all occurrences of a specified character or substring with another.
+   16. concat()
+   Joins two strings together.
+   17. isEmpty()
+   Checks whether a string is empty.
+   Returns true if the string contains no characters.
+   18. split()
+   Splits a string into multiple parts based on a specified delimiter.
 
+#OOP's
+Object-Oriented Programming (OOP) is a programming paradigm that organizes a program using objects and classes. 
+It focuses on representing real-world entities as objects and helps in developing modular, reusable, and maintainable software.
+Class
+A class is a blueprint or template for creating objects. It defines the properties (data members) and behaviors (methods) of objects.
+Object
+An object is an instance of a class. It represents a real-world entity and contains data and methods defined by its class.
 
-
-
-
-
-
+Features (Principles) of OOP
+   1. Encapsulation
+      Encapsulation is the process of wrapping data (variables) and methods (functions) into a single unit called a class.
+      It also restricts direct access to data using access modifiers, ensuring data security.
+         Advantages:
+         Data hiding
+         Improved security
+         Better maintainability
+   2. Inheritance
+      Inheritance is the process by which one class acquires the properties and methods of another class.
+      It promotes code reusability and reduces code duplication.
+         Advantages:
+         Code reusability
+         Easy maintenance
+         Supports hierarchical classification
+   3. Polymorphism
+      Polymorphism means "many forms." It allows the same method or operation to behave differently in different situations.
+      Types of Polymorphism
+         Compile-time Polymorphism: Achieved through method overloading.
+         Run-time Polymorphism: Achieved through method overriding.
+            Advantages:      
+            Flexibility
+            Improved readability
+            Extensibility
+   4. Abstraction
+      Abstraction is the process of hiding implementation details and showing only the essential features to the user.
+         Advantages:      
+         Reduces complexity
+         Improves security
+         Makes programs easier to understand
+   
 
 
 
