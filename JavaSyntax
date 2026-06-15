@@ -1,1 +1,234 @@
+Java Basics – Syntax
+1. Basic Java Program Syntax
+class ClassName {
+    public static void main(String[] args) {
+
+        // Statements
+
+    }
+}
+
+
+#Control Statements – Syntax
+1. if Statement
+    if (condition) {
+        // statements
+    }
+2. if-else Statement
+    if (condition) {
+        // statements
+    } else {
+        // statements
+    }
+3. else-if Ladder
+    if (condition1) {
+        // statements
+    } else if (condition2) {
+        // statements
+    } else {
+        // statements
+    }
+4. switch Statement
+    switch(expression) {
+        case value1:
+            // statements
+            break;
+    
+        case value2:
+            // statements
+            break;
+    
+        default:
+        // statements
+ }
+5. for Loop
+  for(initialization; condition; increment/decrement) {
+      // statements
+  }
+6. while Loop
+    while(condition) {
+        // statements
+    }
+7. do-while Loop
+    do {
+        // statements
+    } while(condition);
+8. break Statement
+    break;
+9. continue Statement
+    continue;
+
+
+#Operators – Syntax
+Arithmetic Operators
+   a + b
+   a - b
+   a * b
+   a / b
+   a % b
+Relational Operators
+  a == b
+  a != b
+  a > b
+  a < b
+  a >= b
+  a <= b
+Logical Operators
+  a && b
+  a || b
+  !a
+Assignment Operators
+  a = b;
+  a += b;
+  a -= b;
+  a *= b;
+  a /= b;
+  a %= b;
+
+Increment / Decrement
+  a++;
+  ++a;
+  a--;
+  --a;
+Ternary Operator
+  condition ? value1 : value2;
+
+#Functions (Methods) – Syntax
+Method Declaration
+  accessModifier returnType methodName(parameters) {
+      // statements
+  }
+Method with Return Value
+  return value;
+Method Call
+    methodName(arguments);
+
+
+#Strings – Syntax
+String Declaration
+  String str = "Hello";
+String Methods
+    length()
+    str.length();
+    charAt()
+    str.charAt(index);
+    substring()
+    str.substring(beginIndex, endIndex);
+    equals()
+    str1.equals(str2);
+    equalsIgnoreCase()
+    str1.equalsIgnoreCase(str2);
+    compareTo()
+    str1.compareTo(str2);
+    toUpperCase()
+    str.toUpperCase();
+    toLowerCase()
+    str.toLowerCase();
+    trim()
+    str.trim();
+    contains()
+    str.contains("text");
+    startsWith()
+    str.startsWith("text");
+    endsWith()
+    str.endsWith("text");
+    indexOf()
+    str.indexOf("text");
+    lastIndexOf()
+    str.lastIndexOf("text");
+    replace()
+    str.replace(oldChar, newChar);    
+    or    
+    str.replace("old", "new");
+    concat()
+    str.concat("text");
+    isEmpty()
+    str.isEmpty();
+    split()
+    str.split("delimiter");
+
+#OOP – Syntax
+  Class
+  class ClassName {
+  
+  }
+Object Creation
+ClassName obj = new ClassName();
+Constructor
+ClassName() {
+
+}
+Inheritance
+  class Child extends Parent {
+  
+  }
+Method Overloading
+  void display() {
+  
+  }
+  void display(int a) {
+  
+  }
+Method Overriding
+  class Parent {
+      void display() {
+  
+      }
+  }
+
+  class Child extends Parent {
+      @Override
+      void display() {
+  
+      }
+  }
+Abstraction
+    abstract class ClassName {
+        abstract void methodName();
+    }
+Interface
+    interface InterfaceName {
+        void methodName();
+    }
+Encapsulation
+  private dataMember;
+  public void setValue() {
+
+  }
+  public returnType getValue() {
+  
+  }
+
+#Multithreading – Syntax
+  Extending Thread Class
+  class MyThread extends Thread {
+  
+      public void run() {
+  
+      }
+  }
+Starting Thread
+  MyThread t = new MyThread();
+  t.start();
+Implementing Runnable Interface
+  class MyThread implements Runnable {
+  
+      public void run() {
+  
+      }
+  }
+Creating Runnable Thread
+  MyThread obj = new MyThread();
+  Thread t = new Thread(obj);
+  t.start();
+  Sleep Method
+  Thread.sleep(milliseconds);
+  Join Method
+  thread.join();
+Synchronization
+  synchronized void methodName() {
+  
+  }
+
+
 
