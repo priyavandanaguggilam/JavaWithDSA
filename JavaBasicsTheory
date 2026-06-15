@@ -225,6 +225,22 @@ Features (Principles) of OOP
          Reduces complexity
          Improves security
          Makes programs easier to understand
+
+#Multithreading
+Definition
+   Multithreading is a feature of Java that allows a program to execute multiple threads simultaneously within a single process. 
+   A thread is the smallest unit of execution in a program. 
+   Multithreading improves the performance and efficiency of applications by allowing multiple tasks to run concurrently.
+Thread
+A thread is a lightweight sub-process that executes a sequence of instructions independently. 
+Multiple threads can run within the same program and share the same memory.
+
+Life Cycle of a Thread
+New – The thread is created but not yet started.
+Runnable – The thread is ready to run and is waiting for CPU time.
+Running – The thread is currently executing.
+Blocked/Waiting – The thread is temporarily inactive, waiting for a resource or another thread.
+Terminated (Dead) – The thread has completed execution or has been stopped.
    
 
 
