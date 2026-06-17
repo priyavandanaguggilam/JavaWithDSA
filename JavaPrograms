@@ -1,0 +1,239 @@
+Pattern Programs
+1.1 2 3 4
+  5 6 7 8
+  9 10 11 12
+  13 14 15 16
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int nums=1;
+		for(int row=0;row<n;row++){
+		    for(int col=0;col<n;col++){
+		        System.out.print(nums+" ");
+		        nums++;
+		    }
+		    	System.out.println();
+		}
+	
+	}
+}
+
+Pattern
+*
+* *
+* * *
+* * * *
+* * * * *
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+	//	int nums=1;
+		for(int row=0;row<n;row++){
+		    for(int col=0;col<=row;col++){
+		        System.out.print("*");
+		      //  nums++;
+		    }
+		    	System.out.println();
+		}
+	
+	}
+}
+
+Pattern
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int nums=1;
+		for(int row=0;row<n;row++){
+		    for(int col=0;col<=row;col++){
+		        System.out.print(nums+" ");
+		       nums++;
+		    }
+		    	System.out.println();
+		}
+	
+	}
+}
+
+Pattern
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int nums=1;
+		for(int row=0;row<n;row++){
+		    for(int col=0;col<=row;col++){
+		        System.out.print(nums+" ");
+		       
+		    }
+		    nums++;
+		    	System.out.println();
+		}
+	
+	}
+}
+
+Pattern
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+	//	int nums=1;
+		for(int row=1;row<=n;row++){
+		    for(int col=1;col<=row;col++){
+		        System.out.print(col);
+		       
+		    }
+		    //nums++;
+		    	System.out.println();
+		}
+	
+	}
+}
+
+Pattern
+A
+A B 
+A B C
+A B C D
+A B C D E
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+	//	char ch='A';
+		for(int row=1;row<=n;row++){
+		    char ch='A';
+		    for(int col=1;col<=row;col++){
+		        System.out.print(ch+" ");
+		       ch++;
+		    }
+		    
+		   System.out.println();
+		}
+	
+	}
+}
+
+A B C D E
+F G H I
+J K L
+M N
+O
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		char ch='A';
+		for(int row=n;row>0;row--){
+		//  char ch='A';
+		    for(int col=1;col<=row;col++){
+		        System.out.print(ch+" ");
+		      ch++;
+		    }
+		     
+		   System.out.println();
+		}
+	
+	}
+}
+
+Pattern
+num=5
+    A
+   ABC
+  ABCDE
+ ABCDEFG
+ABCDEFGHI
+ABCDEFGHI
+ ABCDEFG
+  ABCDE
+   ABC
+    A
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		char ch='A';
+		for(int row=1;row<=num;row++){
+		    ch='A';
+		    for(int space=1;space<=num-row;space++){
+		        System.out.print(" ");
+		    }
+		    for(int col=1;col<=2*row-1;col++){
+		        System.out.print(ch);
+		        ch++;
+		    }
+		    System.out.println("");
+		
+		}
+		
+			for(int row=num;row>0;row--){ //jUSTT change this loop
+		    ch='A';
+		    for(int space=1;space<=num-row;space++){
+		        System.out.print(" ");
+		    }
+		    for(int col=1;col<=2*row-1;col++){
+		        System.out.print(ch);
+		        ch++;
+		    }
+		    System.out.println("");
+		
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
