@@ -564,3 +564,39 @@ public class Main {
     }
 }
 
+Min Heap
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	PriorityQueue<Integer> min_heap=new 	PriorityQueue<Integer>();
+	min_heap.add(10);
+	min_heap.add(20);
+	min_heap.add(30);
+	min_heap.add(3);
+	min_heap.add(40);
+	min_heap.add(2);
+	System.out.println(	min_heap);
+	System.out.println(	min_heap.poll());
+	System.out.println(	min_heap);
+	}
+}
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	PriorityQueue<Integer> min_heap=new 	PriorityQueue<Integer>();
+	min_heap.add(-11);
+	min_heap.add(-5);
+	min_heap.add(-9);
+	min_heap.add(12);
+	min_heap.add(-2);
+	min_heap.add(-3);
+	System.out.println(	min_heap);
+	System.out.println(	-min_heap.poll());
+	System.out.println(	min_heap);
+	}
+}
+
