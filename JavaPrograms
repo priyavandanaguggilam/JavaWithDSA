@@ -454,3 +454,113 @@ public class Main
 	}
 }
 
+Quick Sort
+public class Main{
+ public static int partition(int[] arr,int lower,int upper){
+     int pivot=arr[lower],low=lower,high=upper;
+     while(low<=high){
+         while(low<=upper && arr[low]<=pivot)low++;
+         while(high>=lower && arr[high]>pivot)high--;
+         if(low<high){
+             int safe=arr[low];
+             arr[low]=arr[high];
+             arr[high]=safe;
+         }
+     }
+     int safe=arr[high];
+     arr[high]=arr[lower];
+     arr[lower]=safe;
+     return high;
+    }
+    public static void Quick_Sort(int[] arr,int lower,int upper ){
+        if(lower<upper){
+        int pivot=partition(arr,lower,upper);
+        Quick_Sort(arr,lower,pivot-1);
+        Quick_Sort(arr,pivot+1,upper);
+        }
+    }
+
+    public static void main(String[] args){
+        int[] arr={5,6,71,86,96,75,95,38,30,100};
+        Quick_Sort(arr,0,arr.length-1);
+        for(int ele:arr){
+            System.out.print(ele+" ");
+        }
+    }
+}
+
+
+Quick Select
+public class Main{
+ public static int partition(int[] arr,int lower,int upper){
+     int pivot=arr[lower],low=lower,high=upper;
+     while(low<=high){
+         while(low<=upper && arr[low]<=pivot)low++;
+         while(high>=lower && arr[high]>pivot)high--;
+         if(low<high){
+             int safe=arr[low];
+             arr[low]=arr[high];
+             arr[high]=safe;
+         }
+     }
+     int safe=arr[high];
+     arr[high]=arr[lower];
+     arr[lower]=safe;
+     return high;
+    }
+    public static int Quick_Select(int[] arr,int lower,int upper,int target ){
+        if(lower<=upper){
+        int pivot=partition(arr,lower,upper);
+        if(pivot==target)
+           return arr[pivot];
+        else if(target<pivot)
+           return  Quick_Select(arr,lower,pivot-1,target);
+        else
+          return Quick_Select(arr,pivot+1,upper,target);
+        }
+        return -1;
+    }
+
+    public static void main(String[] args){
+        int[] arr={5,6,71,86,96,75,95,38,30,100};
+        int target=3;
+       int sol=Quick_Select(arr,0,arr.length-1,target-1);
+        
+            System.out.print(sol+" ");
+        
+    }
+}
+
+
+Sort 0's,1's,2's
+
+public class Main {
+    private static void swap(int[] array, int first, int second){
+        int safe = array[first];
+        array[first] = array[second];
+        array[second] = safe;
+    }
+    private static void count(int[] arr){
+        int low=0,mid = 0, high = arr.length-1;
+        while(mid<= high){
+            if(arr[mid] == 0){
+                swap(arr, low, mid);
+                low++;
+                mid++;
+            }else if(arr[mid] == 1){
+                mid ++;
+            }else{
+                swap(arr, mid, high);
+                high--;
+            }
+        }
+    }
+    public static void main(String[] args) {
+        int[] arr= {0,1,2,2,1,0,1,2,0,0,2,1,1,2,0,1,0,2};
+        count(arr);
+        for(int num: arr){
+            System.out.print(num+ " ");
+        }
+    }
+}
+
